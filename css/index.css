@@ -1,0 +1,108 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Microsoft Yahei","WenQuanYi Micro Hei",Arial,Verdana,sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #333;
+    margin: 0;
+    position: relative;
+    height: 100%;
+}
+
+.clear {
+    clear: both
+}
+
+.main-content {
+    position: relative;
+    padding: 10%;
+}
+
+.item-wrapper {
+    width: 100%;
+    position: relative;
+    clear: both;
+}
+
+.nav {
+    margin-top: 20%;
+}
+
+.content {
+}
+
+.chin {
+}
+
+.item {
+    width: 80%;
+    padding: 0 10%;
+}
+
+.progress {
+    margin-bottom: 20px;
+    font-family: Helvetica ;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+}
+
+.question {
+    font-size: 1.5em;
+    line-height: 1.6em;
+    word-wrap:break-word;
+    overflow:hidden;
+    margin-bottom: 20px;
+}
+
+.introduction {
+    margin: 10%;
+    padding: 5%;
+    letter-spacing: 0.1em;
+    line-height: 1.6em;
+}
+
+
+.msg-correct,.msg-wrong {
+    display: none;
+}
+
+.choice-group {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+.choice {
+    width: 20%;
+    display: inline-block;
+    padding: 0 5%;
+}
+
+.btn-default {
+    padding: 50%;
+}
+
+.btn-correct {
+    background: url(../img/correct.png) no-repeat center 0;
+    background-size: cover;
+    padding: 50%;
+}
+
+.btn-wrong {
+    background: url(../img/wrong.png) no-repeat center 0;
+    background-size: cover;
+    padding: 50%;
+}
+
+.btn-correct:active,.btn-wrong:active {
+    background-position: center 100%;
+}
+
+@media screen and (min-width: 1025px) {
+    .main-content {
+        width: 750x;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 50px; 
+    }
+}
