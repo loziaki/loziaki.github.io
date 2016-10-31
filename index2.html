@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<!--<link href="https://unpkg.com/animate.css@3.5.1/animate.min.css" rel="stylesheet">-->
-	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/index2.css">
 </head>
 
 <body>
@@ -25,8 +25,8 @@
 					<div class="btn-wrong" v-on:click="setAnswer(false)"></div>
 				</div>
 				<div v-if="flag.compelete" class="item button-group">
-					<div v-if="answer[index-1]" class="result-correct" v-on:click="setAnswer(true)"></div>
-					<div v-else class="result-wrong" v-on:click="setAnswer(false)"></div>
+					<div v-if="answer[index-1]" class="result-correct"></div>
+					<div v-else class="result-wrong"></div>
 				</div>
 			</div>
 		</div>
@@ -65,8 +65,9 @@
 			</div>
 		</div>
 	</div>
+	<!--<div class="test" v-on:click="showResult()">test</div>-->
 	<script src="js/vue.min.js"></script>
 	<!--<script src="https://unpkg.com/vue@1.0.28/dist/vue.min.js"></script>-->
 	<script src="js/vue-animated-list.js"></script>
-	<script src="js/index.js"></script>
+	<script src="js/index2.js"></script>
 </body>
