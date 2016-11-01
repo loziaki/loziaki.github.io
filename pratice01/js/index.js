@@ -60,7 +60,7 @@ var app = new Vue({
             index: 1,
             msgList: [],
             answer: [null, null, null, null, null, null, null, null, null],
-            resultType: true, 
+            resultType: true,
             flag: {
                 question: true,
                 result: false,
@@ -106,7 +106,7 @@ var app = new Vue({
         },
         setAnswer: function (value) {
             this.answer[this.index - 1] = value;
-            if (this.index === 9){
+            if (this.index === 9) {
                 this.flag.compelete = true;
                 return;
             }
@@ -125,14 +125,14 @@ var app = new Vue({
                     str: this.question[this.index - 1].wm
                 });
             }
-            document.querySelector("#qView").classList.toggle('short-content'); 
+            document.querySelector("#qView").classList.toggle('short-content');
         },
         showResult: function () {
             this.flag.result = !this.flag.result;
             var trueNum = 0;
             for (var a in this.answer) {
                 var value = false;
-                if (a < 4 || a >6) {
+                if (a < 4 || a > 6) {
                     value = true;
                 }
 
@@ -141,9 +141,9 @@ var app = new Vue({
                 }
             }
             if (trueNum > 4) {
-                this.resultType = true;
-            } else {
                 this.resultType = false;
+            } else {
+                this.resultType = true;
             }
         }
     }
